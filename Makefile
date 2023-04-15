@@ -14,3 +14,5 @@ composer-update:
 data:
 	docker exec laravel-docker bash -c "php artisan migrate"
 	docker exec laravel-docker bash -c "php artisan db:seed"
+rl:
+	docker exec -it laravel-docker bash -c "php artisan route list"
