@@ -6,6 +6,11 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\LoginRequest;
 
+use App\Models\User;
+use Illuminate\Validation\ValidationException;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Hash;
+
 class LoginController extends Controller
 {
     /**
