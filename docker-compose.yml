@@ -13,6 +13,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: laravel
+      TZ: Asia/Taipei
     ports:
       - 9001:3306
     restart: unless-stopped
